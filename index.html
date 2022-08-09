@@ -2,23 +2,246 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="estilos.css">
-    <title>cole web</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cole web</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 </head>
 
 <body>
-    <h1>hola mundo</h1>
-    <h2>prueba de fusion</h2>
-    <nav>
-        <ul>
-            <li>contacto</li>
-            <li>productos</li>
-            <li>blog</li>
+  <!-- ===============BARRA SUPERIOR ENCABEZADO================== -->
+
+  <header class="container-fluid bg-black d-flex justify-content-center">
+
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-black p-2" id="menu">
+
+    <div class="container-fluid">
+      <img src="./imagenes/logo_cole.jpg" alt="" width="100" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="#">
+        <span class="text-light fs-5 fw-lighter d-flex mx-4"></span>
+      </a>
+
+      <!-- ============BOTON DEL MENÚ ================== -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupporttedContent">
+
+
+        <!-- =================lista del menú================== -->
+
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="entrenamiento.html">Entrenamiento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contacto.html">Contacto</a>
+          </li>
         </ul>
-    </nav>
+  </nav>
+
+  <!-- =================BANNER DEL ENCABEZADO================== -->
+
+  <section class="container-fluid bg-danger">
+
+    <div class="row">
+     
+      <div class="col-lg-8 col-md-8 col-sm-12 p-0 d-flex justify-content-center">
+        <img src="./imagenes/banner.png" class="img-fluid" alt="banner">
+            </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-none d-flex">
+        <img src="./imagenes/paisaje_cole_web2.jpg" class="img-fluid" alt="Aventura">
+      </div>
+      <h1 class="text-uppercase fw-bolder text-light align-content-center">Es tiempo de reforzar tu juego</h1>
+      
+    </div>
+
+
+    <!-- =================ESPACIO SEPARADOR ENTRE CONTENEDORES================== -->
+
+    <section class="container-fluid">
+      <div class="col-12">
+      </div>
+
+      <!-- =================SECCIONES TEMÁTICAS ================== -->
+
+      <div class="container-fluid d-flex justify-content-center bg-danger ">
+        <div class="row ">
+          <div class="col-md-3 lg-3 sm-3 xs-none mt-5 mb-5 mx-5">
+
+            <img src="./imagenes/entrenamiento1_cole_web.jpg" alt="Equipos deportivos">
+            <button type="button" class="btn btn-light">Encuentra tu equipo</button>
+          </div>
+          <div class="col-md-3 lg-3 sm-3 xs-none mt-5 mb-5 mx-5">
+
+            <img src="./imagenes/entrenamiento2_cole_web.jpg" alt="Fuerza y destreza">
+            <button type="button" class="btn btn-light">Encuentra tu equipo</button>
+          </div>
+          <div class="col-md-3 lg-3 sm-3 xs-none mt-5 mb-5 mx-5">
+
+            <img src="./imagenes/entrenamiento3_cole_web.jpg" alt="indumentaria deportiva">
+            <button type="button" class="btn btn-light">Encuentra tu equipo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================ARTÍCULOS SOBRE ENTRENAMIOENTO 2================== -->
+
+      <div class="container-fluid bg-light ">
+        <div class="row align-items-center justify-content-between">
+          <div class="col p-3">
+            <h3 class="text-end text-uppercase fs-3 fw-bold">Entrenamiento Seguro</h3>
+            <h4 class="text-end text-black-50 pb-3">Seguir estos consejos, aportará valor a tu entrenamiento.</h3>
+              <button type="button" class="align-content-end justify-content-between btn btn-secondary" clas>Leer más</button>
+          </div>
+          <div class="col p-5">
+            <img src="./imagenes/cuerdas_cole_web.jpg" class="img-fluid" alt="Ejercicios con Cuerdas">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- =================PRODUCTOS NUEVOS================== -->
+      <div class="container-fluid bg-white p-5">
+
+        <div class="container-fluid p-5 justify-content-center">
+          <a class="navbar-brand" href="#">
+            <span class="text-danger justify-content-center fs-5 fw-bold d-flex mx-4">NUEVOS INGRESOS</span>
+          </a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./imagenes/producto1_cole_web.jpg" class="card-img-top" alt="lentes_xtiger">
+              <div class="card-body">
+                <h5 class="card-title">Lentes de Protección</h5>
+                <p class="card-text text-danger fw-bold">$ 55.00,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./imagenes/producto2_cole_web.jpg" class="card-img-top" alt="remera_roja">
+              <div class="card-body">
+                <h5 class="card-title">Remera Roja</h5>
+                <p class="card-text text-danger fw-bold">$ 55.00,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./imagenes/producto3_cole_web.jpg" class="card-img-top" alt="calza_negra">
+              <div class="card-body">
+                <h5 class="card-title">Calza Ciclista</h5>
+                <p class="card-text text-danger fw-bold">$ 55.00,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./imagenes/producto4_cole_web.jpg" class="card-img-top" alt="conjunto_amarillo">
+              <div class="card-body">
+                <h5 class="card-title">Conjunto Ciclista</h5>
+                <p class="card-text text-danger fw-bold">$ 55.00,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================FOOTER================== -->
+
+      <div class="container-fluid bg-black">
+        <footer class="bd-footer bg-black py-4 py-md-5">
+          <div class="container-md">
+            <div class="row py-2">
+              <div class="col">
+                <ul class="list-unstyled">
+                  <div class="col-4">
+                    <h5 class="text-danger text-uppercase fw-bolder">COLE</h5>
+
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="/index.html" class="text-light">Inicio</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="/productos.html" class="text-light">Tienda</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="/entrenamiento.html" class="text-light">Entrenamiento</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="/contacto.html" class="text-light">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+
+              <div class="col col-4 ">
+                <h5 class="text-danger text-uppercase fw-bolder">SÍGUENOS</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="https://instagram.com/cole.chile?igshid=YmMyMTA2M2Y=" class="text-light">Instagram</a>
+
+                  </li>
+                  <li class="mb-2">
+                    <a href="" class="text-light">Facebook</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="" class="text-light">Youtube</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="" class="text-light">Twitter</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col col-4">
+                <h5 class="text-danger text-uppercase fw-bolder">SUSCRIBETE AL NEWSLETTER</h5>
+                <form>
+                  <div class="mb-2">
+
+                    <label for="exampleInputEmail1" class="form-label text-secondary">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.
+                    </div>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-secondary" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-danger">Suscribirme</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- =================FOOTER cierre================== -->
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+      <script src="./js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
