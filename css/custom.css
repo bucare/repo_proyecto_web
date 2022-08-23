@@ -1,4 +1,12 @@
 
+.color {
+background-color: rgb(217, 82, 32);
+}
+
+.color {  background-color: rgb(17, 17, 17)
+
+}
+
 .text-naranja {
     color: rgb(217, 82, 32);
 }
@@ -10,10 +18,14 @@
     background-color: rgb(217, 82, 32);
 }
 
-.negro {color: rgb(17, 17, 17)
+.bg-negro {color: rgb(17, 17, 17)
 }
 
 
 .bg-naranja {
     background-color: rgb(217, 82, 32);
+}
+<!-- ===============contacto================== -->
+
+
 }
